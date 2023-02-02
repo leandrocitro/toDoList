@@ -5,9 +5,9 @@
 }
 
 body {
-    background: gray;
-    color: black;
-    -webkit-font-smoothing: antialiased;
+    
+     -webkit-font-smoothing: antialiased;
+     background-color: rgb(29, 28, 28);
 }
 
 

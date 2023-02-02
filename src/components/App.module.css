@@ -5,8 +5,17 @@
 
     display: grid;
     grid-template-columns: 120px 1fr;
-    gap: 2 rem;
+    gap: 2rem;
     align-items: flex-start;
 
-    background-color: gray;
+    
 }
+
+.wrapper main {
+    margin: -4rem auto;
+    padding: -2 1rem;
+    align-items: center;    
+}
+
+
+
