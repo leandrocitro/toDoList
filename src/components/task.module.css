@@ -1,9 +1,57 @@
-.body {
-    display: flex;
+.tasks {
+    display: grid;
     align-items: center;
+    background: transparent;
+    gap: 3rem;
+    grid-template-columns: 1fr 1rem;
+    
+    
     }
 
-.body button {
-    border-style: outset;
+.tasks button {
     
+    height: 2rem;
+    width: 4rem;
+    margin-left: 1rem;
+    border-radius: 8px;
+    color: white;
+    background: green;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+    
+}
+
+textArea {
+    border-radius: 8px;
+    border: 0;
+    resize: none;
+    transition: background-color 0.5s;
+    text-align: center;
+    justify-content: center;
+    font-family: verdana;
+    font-style: normal;
+    
+}
+
+.tasks footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.tasks:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.tasksList {
+    display: grid;
+    justify-content: flex-start;
+    font-size: 1rem;
+    grid-template-rows: auto;
+}
+
+.taskslist h1 {
+    color: white;
 }
