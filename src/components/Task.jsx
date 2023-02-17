@@ -5,7 +5,7 @@ import { useState } from 'react';
 export function Task() {
 
     const [tasks, setTasks] = useState([
-        'Estudar React',
+        
         ])
 
     function handleCreateNewTask() {
@@ -13,6 +13,8 @@ export function Task() {
     event?.preventDefault();
 
     const newTask = event.target.newTask.value;
+
+    
 
     //Imutabilidade
 
@@ -34,9 +36,10 @@ export function Task() {
              
         <div className={style.taskslist}>
             <div>
-            {tasks.map(task => {
+            {tasks.map((task) => {
                 return (
-                    <p>Task adicionado</p>
+                    
+                    <p> {task} </p> 
                 )
             
                 
