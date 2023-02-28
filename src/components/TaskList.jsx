@@ -30,12 +30,14 @@ export function TaskList({content}) {
 
             <textarea name="newTask"
             className={style.textArea}
-            id="tasks" cols={60} rows={2} placeholder="Digite uma tarefa">
+            id="tasks" cols={60} rows={2} placeholder="Digite uma tarefa"
+            maxLength={30}>
             </textarea>
 
-            <footer> 
+            <footer className={style.footerTaskList}> 
             <button className={style.botaoAdd} type="submit">Add</button> 
             </footer>
+            
             </form>
 
             
@@ -45,7 +47,7 @@ export function TaskList({content}) {
             {tasks.map((task) => {
             return (
             
-            <Task content={task}/> 
+            <Task content={task}/>
         )
 
         

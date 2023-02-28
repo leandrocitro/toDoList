@@ -14,8 +14,7 @@ export function App() {
         <Header />
       <div className={style.wrapper}>
         <TaskList />
-               
-        </div>
+      </div>
         <Footer />
     </div>
   )

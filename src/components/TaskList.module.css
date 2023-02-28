@@ -1,25 +1,20 @@
 .tasks {
-
 font-size: large;
     
     
     }
 
 .newTask {
-    display: grid;
-    align-items: center;
-    justify-content: center;
     background: transparent;
-    grid-template-columns: 1fr 1rem;
     padding: 1rem;
-    position: fixed;
+    display: flex;
+    
         
         
         }
 
 .TaskList {
-    gap: 2rem;
-    padding: 1rem;
+    font-size: large;
     
 }
         
@@ -50,7 +45,7 @@ textArea {
     
 }
 
-.tasks footer {
+.footerTaskList {
     visibility: hidden;
     max-height: 0;
 }
@@ -58,13 +53,6 @@ textArea {
 .tasks:focus-within footer {
     visibility: visible;
     max-height: none;
-}
-
-.tasksList {
-    display: grid;
-    justify-content: flex-start;
-    font-size: 1rem;
-    grid-template-rows: auto;
 }
 
 .taskslist p {

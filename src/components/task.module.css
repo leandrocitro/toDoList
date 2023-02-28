@@ -1,11 +1,20 @@
-.newTaskBox {
-    margin-top: 1.5rem;
-    width: 100%;
+.newTask {
+    margin-top: 2.5rem;
     display: flex;
-    background: gray;
-    border-radius: 8px;
-    padding: 1rem;
     gap: 2rem;
+    align-items: center;
+    background: rgb(202, 196, 196);
+    height: 50px;
+}
+
+.newTask strong{
+    
+    
+    width: 490px;
+    border-radius: 8px;
+    
+    height: 30px;
+    
 }
 
 .taskContent {
@@ -13,15 +22,32 @@
     gap: 2rem;
 }
 
+.newTask footer {
+    justify-content: flex-end;
+    align-items: end;
+}
 
-
-.newTask button {
+.botaoDeletar {
     height: 2rem;
     width: 4rem;
     margin-left: 1rem;
     border-radius: 8px;
+    display: flexbox;
     color: white;
     background: red;
     font-weight: bold;
     cursor: pointer;
+    justify-content: flex-end;
+
+    
+}
+
+.tasksCriadas{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tasksConcluidas{
+    display: flex;
+    justify-content: end;
 }
