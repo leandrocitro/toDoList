@@ -42,12 +42,4 @@
     
 }
 
-.tasksCriadas{
-    display: flex;
-    justify-content: flex-start;
-}
 
-.tasksConcluidas{
-    display: flex;
-    justify-content: end;
-}

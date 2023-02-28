@@ -31,7 +31,7 @@ export function TaskList({content}) {
             <textarea name="newTask"
             className={style.textArea}
             id="tasks" cols={60} rows={2} placeholder="Digite uma tarefa"
-            maxLength={30}>
+            maxLength={50}>
             </textarea>
 
             <footer className={style.footerTaskList}> 
@@ -40,6 +40,10 @@ export function TaskList({content}) {
             
             </form>
 
+            <div className={style.TaskBox}>
+                <strong className={style.tasksCriadas}>Tarefas Criadas</strong>
+                <strong className={style.tasksConcluidas}>Concluídas</strong>
+            </div>
             
      
             <div className={style.tasksList}>

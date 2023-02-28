@@ -1,5 +1,6 @@
 .tasks {
 font-size: large;
+margin-left: 5rem;
     
     
     }
@@ -8,7 +9,7 @@ font-size: large;
     background: transparent;
     padding: 1rem;
     display: flex;
-    
+      
         
         
         }
@@ -59,4 +60,26 @@ textArea {
     color: white;
     font-size: 1.5rem;
     
+}
+
+.TaskBox {
+    margin-top: 2rem;
+    margin-left: -5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tasksCriadas{
+    
+    justify-content: flex-start;
+    justify-items: flex-start;
+    color: aqua;
+}
+
+.tasksConcluidas{
+    
+    justify-content: flex-end;
+    justify-items: end;
+    color: blueviolet;
 }
