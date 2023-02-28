@@ -1,53 +1,13 @@
-import style from './task.module.css'
-import { useState } from 'react';
- 
+import style from './Task.module.css'
 
-export function Task() {
 
-    const [tasks, setTasks] = useState([
-        
-        ])
 
-    function handleCreateNewTask() {
-
-    event?.preventDefault();
-
-    const newTask = event.target.newTask.value;
-
-    
-
-    //Imutabilidade
-
-        setTasks([...tasks, newTask]);
-
-        }
-
+export function Task({content}) {
     return (
-        <form onSubmit = {handleCreateNewTask} className={style.tasks}> 
-
-        <textarea name="newTask"
-            className={style.textArea}
-            id="tasks" cols={60} rows={2} placeholder="Digite uma tarefa">
-        </textarea>
-
-        <footer> 
-            <button type="submit">Add</button> 
-        </footer>
-             
-        <div className={style.taskslist}>
-            <div>
-            {tasks.map((task) => {
-                return (
-                    
-                    <p> {task} </p> 
-                )
-            
-                
-            })}
-            </div>
+        <div className={style.newTaskBox}>
+             <strong>{content}</strong>
+             <button>Del</button>
         </div>
-
-        </form>
+        
     )
 }
-

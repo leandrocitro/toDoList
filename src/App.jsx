@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import { TaskList } from './components/TaskList'
 import { Task } from './components/Task'
 import { Footer } from './components/Footer'
 
@@ -12,7 +13,8 @@ export function App() {
     <div className={style.container}>
         <Header />
       <div className={style.wrapper}>
-        <Task />
+        <TaskList />
+               
         </div>
         <Footer />
     </div>
